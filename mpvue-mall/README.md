@@ -1,37 +1,19 @@
-# mpvue-mall
+# 1. 先检查下 Node.js 是否安装成功
+$ node -v
+v8.9.0
 
-> A Mpvue project
+$ npm -v
+5.6.0
 
-## Build Setup
+# 2. 由于众所周知的原因，可以考虑切换源为 taobao 源
+$ npm set registry https://registry.npm.taobao.org/
 
-``` bash
-# 初始化项目
-vue init mpvue/mpvue-quickstart myproject
-cd myproject
+# 3. 全局安装 vue-cli
+# 一般是要 sudo 权限的
+$ npm install --global vue-cli@2.9
 
-# 安装依赖
-yarn
 
-# 开发时构建
-npm dev
-
-# 打包构建
-npm build
-
-# 指定平台的开发时构建(微信、百度、头条、支付宝)
-npm dev:wx
-npm dev:swan
-npm dev:tt
-npm dev:my
-
-# 指定平台的打包构建
-npm build:wx
-npm build:swan
-npm build:tt
-npm build:my
-
-# 生成 bundle 分析报告
-npm run build --report
-```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+# 5. 安装依赖，
+$ cd dstore-web-repository
+$ npm install
+$ npm run dev
